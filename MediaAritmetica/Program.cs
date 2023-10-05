@@ -1,5 +1,6 @@
 ﻿using Sequencia = AcademiaDotNet.ExerciciosSequenciais;
 using Selecao = AcademiaDotNet.ExerciciosSelecao;
+using Repeticao = AcademiaDotNet.ExerciciosRepeticao;
 
 namespace AcademiaDotNet
 {
@@ -7,9 +8,8 @@ namespace AcademiaDotNet
     {
         static void Main(string[] args)
         {
-
             // duvida sobre o exercicio 11 de seleção
-            Sequencia.Exercicio10.Saque();
+            Repeticao.Exercicio7.Contador();
         }
     }
 }
