@@ -9,7 +9,7 @@ namespace AcademiaDotNet
         {
 
             // duvida sobre o exercicio 11 de seleção
-            Selecao.Exercicio21.Conversor();
+            Sequencia.Exercicio10.Saque();
         }
     }
 }

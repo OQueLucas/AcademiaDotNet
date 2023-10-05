@@ -12,38 +12,22 @@
         // de acordo com o critério da “distribuição ótima”.
         public static void Saque()
         {
-            float saque = 278.00F;
-            int nota50 = 0, nota20 = 0, nota10 = 0, nota5 = 0, nota1 = 0;
-            while (saque > 0)
-            {
-                if (saque >= 50)
-                {
-                    nota50++;
-                    saque -= 50;
+            int saque = 278;
+            int nota50, nota20, nota10, nota5, nota1;
 
-                }
-                else if (saque >= 20)
-                {
-                    nota20++;
-                    saque -= 20;
+            nota50 = saque / 50;
+            saque = saque - (nota50 * 50);
 
-                }
-                else if (saque >= 10)
-                {
-                    nota10++;
-                    saque -= 10;
-                }
-                else if (saque >= 5)
-                {
-                    nota5++;
-                    saque -= 5;
-                }
-                else if (saque >= 1)
-                {
-                    nota1++;
-                    saque -= 1;
-                }
-            }
+            nota20 = saque / 20;
+            saque = saque - (nota20 * 20);
+
+            nota10 = saque / 10;
+            saque = saque - (nota10 * 10);
+
+            nota5 = saque / 5;
+            saque = saque - (nota5 * 5);
+
+            nota1 = saque / 1;
 
             Console.WriteLine("Foi sacado: ");
             Console.WriteLine($"foi sacado: {nota50} notas de 50.");
