@@ -13,25 +13,25 @@
 
         public static void TesteGlicemia()
         {
-            float[] teste = new float[3];
+            float teste;
             float total = 0;
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 1; i <= 3; i++)
             {
-                Console.WriteLine($"Insira o valor do {i + 1}º teste de glicemia em jejum: ");
-                teste[i] = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Insira o valor do {i}º teste de glicemia em jejum: ");
+                teste = float.Parse(Console.ReadLine());
 
-                if (teste[i] < 65)
+                if (teste < 65)
                 {
                     Console.WriteLine("Corre risco de hipoglicemia.\n");
                 }
-                else if (teste[i] > 250)
+                else if (teste > 250)
                 {
 
                     Console.WriteLine("Corre risco de hiperglicemia.\n");
                 }
 
-                total += teste[i];
+                total += teste;
             }
 
             float media = total / 3;
