@@ -9,8 +9,10 @@ namespace AcademiaDotNet
     {
         static void Main(string[] args)
         {
-            // duvida sobre o exercicio 11 de seleção
-            Repeticao2.Exercicio2.RepetirNumeroPositivo();
+            // finalizar Repeticao2.Exercicio17.QuadradosInteiros();
+
+
+            Repeticao2.Exercicio17.QuadradosInteiros();
         }
     }
 }
