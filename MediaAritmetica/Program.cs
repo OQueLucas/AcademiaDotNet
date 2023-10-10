@@ -2,6 +2,7 @@
 using Selecao = AcademiaDotNet.ExerciciosSelecao;
 using Repeticao = AcademiaDotNet.ExerciciosRepeticao;
 using Repeticao2 = AcademiaDotNet.ExerciciosRepeticao2;
+using Vetores = AcademiaDotNet.ExercicioVetores;
 
 namespace AcademiaDotNet
 {
@@ -9,10 +10,12 @@ namespace AcademiaDotNet
     {
         static void Main(string[] args)
         {
-            // finalizar Repeticao2.Exercicio17.QuadradosInteiros();
+            // finalizar Repeticao2.Exercicio17();
+            // corrigir ExerciciosRepeticao2.Exercicio3();
+            // corrigir em aula Vetores.Exercicio12();
+            // finalizar em aula Vetores.Exercicio9();
 
-
-            Repeticao2.Exercicio17.QuadradosInteiros();
+            Vetores.Exercicio16.Operacoes();
         }
     }
 }
