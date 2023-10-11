@@ -1,4 +1,6 @@
-﻿namespace AcademiaDotNet.ExercicioVetores
+﻿using System;
+
+namespace AcademiaDotNet.ExercicioVetores
 {
     internal class Exercicio16
     {
@@ -39,7 +41,7 @@
                 int cont = 0;
                 for (int j = 0; j < x.Length; j++)
                 {
-                    if (x[i] == y[j])
+                    if (x[j] == y[i])
                     {
                         cont++;
                     }
@@ -49,29 +51,26 @@
                     tamanho--;
                 }
             }
+
             uniao = new int[10 + tamanho];
             int iUniao = 10;
             for (int i = 0; i < y.Length; i++)
             {
                 uniao[i] = x[i];
-                bool existe = false;
 
                 for (int j = 0; j < x.Length; j++)
                 {
-                    int arrayX = x[j];
-                    int arrayY = y[i];
-
-                    if (arrayX == arrayY)
+                    if (x[j] == y[i])
                     {
-                        existe = true;
                         break;
                     }
+                    if (j == (y.Length - 1))
+                    {
+                        uniao[iUniao] = y[i];
+                        iUniao++;
+                    }
                 }
-                if (!existe)
-                {
-                    uniao[iUniao] = y[i];
-                    iUniao++;
-                }
+
             }
             return uniao;
         }
@@ -81,10 +80,10 @@
             int[] diferenca;
             int tamanho = 10;
 
-            for (int i = 0; i < x.Length; i++)
+            for (int i = 0; i < y.Length; i++)
             {
                 int cont = 0;
-                for (int j = 0; j < y.Length; j++)
+                for (int j = 0; j < x.Length; j++)
                 {
                     if (x[i] == y[j])
                     {
@@ -96,32 +95,31 @@
                     tamanho--;
                 }
             }
-            diferenca = new int[tamanho];
-            int iUniao = 0;
-            for (int i = 0; i < x.Length; i++)
+
+            diferenca = new int[10 + tamanho];
+            int iUniao = 10;
+            for (int i = 0; i < y.Length; i++)
             {
-                bool existe = false;
+                diferenca[i] = x[i];
 
-                for (int j = 0; j < y.Length; j++)
+                for (int j = 0; j < x.Length; j++)
                 {
-                    int arrayX = x[j];
-                    int arrayY = y[i];
-
-                    if (arrayX == arrayY)
+                    int arrayx = x[j];
+                    int arrayy = y[i];
+                    if (arrayx == arrayy)
                     {
-                        existe = true;
                         break;
                     }
+                    if (j == (x.Length - 1))
+                    {
+                        diferenca[iUniao] = y[i];
+                        iUniao++;
+                    }
                 }
-                if (!existe)
-                {
-                    diferenca[iUniao] = x[i];
-                    iUniao++;
-                }
+
             }
             return diferenca;
         }
-
 
     }
 }

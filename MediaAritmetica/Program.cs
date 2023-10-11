@@ -3,6 +3,7 @@ using Selecao = AcademiaDotNet.ExerciciosSelecao;
 using Repeticao = AcademiaDotNet.ExerciciosRepeticao;
 using Repeticao2 = AcademiaDotNet.ExerciciosRepeticao2;
 using Vetores = AcademiaDotNet.ExercicioVetores;
+using Matrizes = AcademiaDotNet.ExerciciosMatrizes;
 
 namespace AcademiaDotNet
 {
@@ -13,9 +14,10 @@ namespace AcademiaDotNet
             // finalizar Repeticao2.Exercicio17();
             // corrigir ExerciciosRepeticao2.Exercicio3();
             // corrigir em aula Vetores.Exercicio12();
-            // finalizar em aula Vetores.Exercicio9();
+            // finalizar Vetores.Exercicio9();
+            // finalizar Vetores.Exercicio16();
 
-            Vetores.Exercicio16.Operacoes();
+            Matrizes.Exercicio10.Media();
         }
     }
 }

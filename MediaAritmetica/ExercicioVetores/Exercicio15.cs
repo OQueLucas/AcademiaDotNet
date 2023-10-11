@@ -9,8 +9,8 @@
 
         public static void Inveter()
         {
-            int[] vetor = new int[50];
-            int[] vetorInverso = new int[50];
+            int[] vetor = new int[20];
+            int[] vetorInverso = new int[20];
             byte j = 0;
             Random rng = new();
 
