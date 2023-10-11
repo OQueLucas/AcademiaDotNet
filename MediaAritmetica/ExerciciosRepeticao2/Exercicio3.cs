@@ -23,10 +23,19 @@
                     Console.WriteLine("Esse número é impar!");
                 }
 
-                if ((numero == 2 || numero == 3 || numero == 5 || numero == 7) || (numero > 1 && numero % 2 != 0 && numero % 3 != 0 && numero % 4 != 0 && numero % 5 != 0 && numero % 6 != 0 && numero % 7 != 0))
+                int cont = 0;
+
+                for (int j = 1; j < numero; j++)
+                {
+                    if (numero % j == 0)
+                    {
+                        cont++;
+                    }
+                }
+
+                if (cont == 1)
                 {
                     Console.WriteLine("É numero primo");
-
                 }
 
             } while (numero != 0);

@@ -11,13 +11,7 @@ namespace AcademiaDotNet
     {
         static void Main(string[] args)
         {
-            // finalizar Repeticao2.Exercicio17();
-            // corrigir ExerciciosRepeticao2.Exercicio3();
-            // corrigir em aula Vetores.Exercicio12();
-            // finalizar Vetores.Exercicio9();
-            // finalizar Vetores.Exercicio16();
-
-            Matrizes.Exercicio10.Media();
+            Repeticao2.Exercicio3.Loop();
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AcademiaDotNet.ExercicioVetores
+﻿namespace AcademiaDotNet.ExercicioVetores
 {
     internal class Exercicio16
     {
@@ -16,18 +14,24 @@ namespace AcademiaDotNet.ExercicioVetores
 
         public static void Operacoes()
         {
-            int[] x = new int[10];
-            int[] y = new int[10];
-            Random rng = new Random();
-            for (int i = 0; i < x.Length; i++)
-            {
-                x[i] = rng.Next(20);
-                y[i] = rng.Next(20);
-            }
-            Console.WriteLine(String.Join(" | ", x));
-            Console.WriteLine(String.Join(" | ", y));
-            Console.WriteLine(String.Join(" | ", Uniao(x, y)));
-            //Console.WriteLine(String.Join(" | ", Diferenca(x, y)));
+            //int[] x = new int[10];
+            //int[] y = new int[10];
+            //Random rng = new();
+            //for (int i = 0; i < x.Length; i++)
+            //{
+            //    x[i] = rng.Next(20);
+            //    y[i] = rng.Next(20);
+            //}
+
+            int[] x = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] y = { 0, 5, 7, 9, 12, 13, 18, 1, 15, 19 };
+
+            Console.WriteLine("X:\t\t" + String.Join("\t", x) + "\n");
+            Console.WriteLine("Y:\t\t" + String.Join("\t", y) + "\n");
+            Console.WriteLine("União:\t\t" + String.Join("\t", Uniao(x, y)) + "\n");
+            Console.WriteLine("Diferença:\t" + String.Join("\t", Diferenca(x, y)) + "\n");
+            Console.WriteLine("Diferença:\t" + String.Join("\t", Diferenca(y, x)) + "\n");
+            Console.WriteLine("Intersecção:\t" + String.Join("\t", Interseccao(x, y)) + "\n");
 
         }
 
@@ -80,12 +84,12 @@ namespace AcademiaDotNet.ExercicioVetores
             int[] diferenca;
             int tamanho = 10;
 
-            for (int i = 0; i < y.Length; i++)
+            for (int i = 0; i < x.Length; i++)
             {
                 int cont = 0;
-                for (int j = 0; j < x.Length; j++)
+                for (int j = 0; j < y.Length; j++)
                 {
-                    if (x[i] == y[j])
+                    if (x[j] == y[i])
                     {
                         cont++;
                     }
@@ -96,29 +100,62 @@ namespace AcademiaDotNet.ExercicioVetores
                 }
             }
 
-            diferenca = new int[10 + tamanho];
-            int iUniao = 10;
-            for (int i = 0; i < y.Length; i++)
+            diferenca = new int[tamanho];
+            int iUniao = 0;
+            for (int i = 0; i < x.Length; i++)
             {
-                diferenca[i] = x[i];
-
-                for (int j = 0; j < x.Length; j++)
+                for (int j = 0; j < y.Length; j++)
                 {
-                    int arrayx = x[j];
-                    int arrayy = y[i];
-                    if (arrayx == arrayy)
+                    if (x[i] == y[j])
                     {
                         break;
                     }
-                    if (j == (x.Length - 1))
+                    if (j == (y.Length - 1))
                     {
-                        diferenca[iUniao] = y[i];
+                        diferenca[iUniao] = x[i];
                         iUniao++;
                     }
                 }
-
             }
             return diferenca;
+        }
+
+        public static int[] Interseccao(int[] x, int[] y)
+        {
+            int[] interseccao;
+            int tamanho = 10;
+
+            for (int i = 0; i < x.Length; i++)
+            {
+                int cont = 0;
+                for (int j = 0; j < y.Length; j++)
+                {
+                    if (x[j] == y[i])
+                    {
+                        cont++;
+                    }
+                }
+                if (cont == 0)
+                {
+                    tamanho--;
+                }
+            }
+
+            interseccao = new int[tamanho];
+            int iUniao = 0;
+            for (int i = 0; i < x.Length; i++)
+            {
+                for (int j = 0; j < y.Length; j++)
+                {
+                    if (x[i] == y[j])
+                    {
+                        interseccao[iUniao] = x[i];
+                        iUniao++;
+                        break;
+                    }
+                }
+            }
+            return interseccao;
         }
 
     }
