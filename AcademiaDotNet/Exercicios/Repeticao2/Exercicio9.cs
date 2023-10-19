@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AcademiaDotNet.Exercicios.Repeticao2
+﻿namespace AcademiaDotNet.Exercicios.Repeticao2
 {
     internal class Exercicio9
     {

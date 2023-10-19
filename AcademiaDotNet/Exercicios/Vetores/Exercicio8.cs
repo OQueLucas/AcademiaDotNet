@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AcademiaDotNet.Exercicios.Vetores
+﻿namespace AcademiaDotNet.Exercicios.Vetores
 {
     internal class Exercicio8
     {
