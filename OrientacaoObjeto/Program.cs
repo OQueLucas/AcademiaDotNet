@@ -1,0 +1,199 @@
+﻿using OrientacaoObjeto.Exercicios;
+
+namespace OrientacaoObjeto
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Oi estamos na classe principal");
+            //Pessoa p0 = new Pessoa();
+            //p0.nome = "Ricardo Frohlich";
+            //p0.idade = 38;
+
+            //Pessoa p1 = new Pessoa();
+            //p1.nome = "Lucas Queiroz";
+            //p1.idade = 24;
+
+            //Pessoa p2 = new Pessoa();
+            //p2.nome = "Gabriel Castagna";
+            //p2.idade = 27;
+
+            //Pessoa p3 = new Pessoa();
+            //p3.nome = "Paulo Junior";
+            //p3.idade = 39;
+
+            //Console.WriteLine("Nome: " + p0.nome);
+            //Console.WriteLine("Idade: " + p0.idade);
+            //Console.WriteLine("Nome: " + p1.nome);
+            //Console.WriteLine("Idade: " + p1.idade);
+            //Console.WriteLine("Nome: " + p2.nome);
+            //Console.WriteLine("Idade: " + p2.idade);
+            //Console.WriteLine("Nome: " + p3.nome);
+            //Console.WriteLine("Idade: " + p3.idade);
+
+            // ---------------------------------------------------------------------------
+
+            //Professor professor = new Professor();
+            //Laboratorio laboratorio = new Laboratorio();
+
+            //professor.nome = "Ricardo";
+            //laboratorio.local = "Sala 201";
+
+            //Console.WriteLine("O professor " + professor.nome + " alocou o laboratória da "+ laboratorio.local + " para a turma de hoje");
+
+            // ---------------------------------------------------------------------------
+
+            //Pessoa pessoa = new Pessoa();
+            //Console.WriteLine("Insira seu nome: ");
+            //pessoa.nome = Console.ReadLine();
+            //Console.WriteLine("Insira sua idade: ");
+            //pessoa.idade = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Insira seu genero: ");
+            //pessoa.genero = Console.ReadLine();
+            //Console.WriteLine();
+            //Console.WriteLine("Nome: " + pessoa.nome);
+            //Console.WriteLine("Idade: " + pessoa.idade);
+            //Console.WriteLine("Genero: " + pessoa.genero);
+
+            // ---------------------------------------------------------------------------
+
+            //Jogo jogo = new Jogo();
+            //Console.WriteLine("Insira o nome do jogo: ");
+            //jogo.titulo = Console.ReadLine();
+            //Console.WriteLine("Insira o genero do jogo: ");
+            //jogo.genero = Console.ReadLine();
+            //Console.WriteLine("Insira a plataforma disponível: ");
+            //jogo.plataforma = Console.ReadLine();
+            //Console.WriteLine("Insira o ano de lançamento: ");
+            //jogo.anoDeLancamento = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine(jogo.titulo + ", " + jogo.genero + ". Disponível na plataforma: " + jogo.plataforma + ". Ano de lançamento: " + jogo.anoDeLancamento);
+
+            // ---------------------------------------------------------------------------
+
+            //Estudio estudio = new();
+            //Console.WriteLine("Insira o nome do estúdio: ");
+            //estudio.nome = Console.ReadLine();
+            //Console.WriteLine("Insira o ano de fundação: ");
+            //estudio.anoFundacao = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Insira o país de origem: ");
+            //estudio.paisOrigem = Console.ReadLine();
+            //Console.WriteLine("Insira a quantidade de jogos produzidos: ");
+            //estudio.jogosProduzidos = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("O estúdio " + estudio.nome + " foi fundado em " + estudio.anoFundacao + " no " + estudio.paisOrigem + " e produziu " + estudio.jogosProduzidos + " jogos");
+
+            // ---------------------------------------------------------------------------
+
+            //Carro carro = new();
+            //Console.WriteLine("Insira a marca do carro: ");
+            //carro.marca = Console.ReadLine();
+            //Console.WriteLine("Insira o modelo: ");
+            //carro.modelo = Console.ReadLine();
+            //Console.WriteLine("Insira o ano de fabricação: ");
+            //carro.anoFabricacao = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("O " + carro.marca + " " + carro.modelo + " foi fabricado em " + carro.anoFabricacao);
+
+            // ---------------------------------------------------------------------------
+
+            //Livro livro0 = new();
+            //Console.WriteLine("Insira o título do livro: ");
+            //livro0.titulo = Console.ReadLine();
+            //Console.WriteLine("Insira o nome do autor: ");
+            //livro0.autor = Console.ReadLine();
+            //Console.WriteLine("Insira o ano de publicação: ");
+            //livro0.anoPublicacao = int.Parse(Console.ReadLine());
+
+
+            //Livro livro1 = new();
+            //Console.WriteLine("Insira o título do livro: ");
+            //livro1.titulo = Console.ReadLine();
+            //Console.WriteLine("Insira o nome do autor: ");
+            //livro1.autor = Console.ReadLine();
+            //Console.WriteLine("Insira o ano de publicação: ");
+            //livro1.anoPublicacao = int.Parse(Console.ReadLine());
+
+            //Livro livro2 = new();
+            //Console.WriteLine("Insira o título do livro: ");
+            //livro2.titulo = Console.ReadLine();
+            //Console.WriteLine("Insira o nome do autor: ");
+            //livro2.autor = Console.ReadLine();
+            //Console.WriteLine("Insira o ano de publicação: ");
+            //livro2.anoPublicacao = int.Parse(Console.ReadLine());
+
+
+            //Console.WriteLine("O " + livro0.titulo + " escrito por " + livro0.autor + " foi publicado em " + livro0.anoPublicacao);
+            //Console.WriteLine("O " + livro1.titulo + " escrito por " + livro1.autor + " foi publicado em " + livro1.anoPublicacao);
+            //Console.WriteLine("O " + livro2.titulo + " escrito por " + livro2.autor + " foi publicado em " + livro2.anoPublicacao);
+
+            // ---------------------------------------------------------------------------
+
+            //Lampada l = new(false, 8, "Branca");
+
+            //l.Ligar();
+
+            //l.Desligar();
+
+            //Console.WriteLine("Rertorno da chamada VerificaLigada: " + l.EstaLigada());
+
+            //l.Ligar();
+            //l.Ligar();
+            //l.Desligar();
+            //l.Desligar();
+
+            //Console.WriteLine("Rertorno da chamada VerificaLigada: " + l.EstaLigada());
+
+            // ---------------------------------------------------------------------------
+
+            //Exercicios.Pessoa pessoa = new();
+
+            //pessoa.CadastrarPessoa();
+
+            // ---------------------------------------------------------------------------
+
+            //Console.WriteLine("Nome:");
+            //string nome = Console.ReadLine();
+            //Console.WriteLine("CPF (sem pontuação):");
+            //string cpf = Console.ReadLine();
+            //Console.WriteLine("Nascimento (MM/dd/yyyy):");
+            //DateOnly nascimento = DateOnly.Parse(Console.ReadLine());
+            //Console.WriteLine("RA:");
+            //string ra = Console.ReadLine();
+
+            //Exercicios.Aluno aluno = new(nome, cpf, nascimento, ra);
+
+            //aluno.GetNome();
+            //aluno.GetCpf();
+            //aluno.GetNascimento();
+            //aluno.GetRa();
+
+            // ---------------------------------------------------------------------------
+
+            //Console.WriteLine("Digite o nome do personagem: ");
+            //string nome = Console.ReadLine();
+
+            //Personagem personagem = new(nome);
+
+            //personagem.Jogo();
+
+            // ---------------------------------------------------------------------------
+
+            Console.WriteLine("Insira o título do livro: ");
+            string titulo = Console.ReadLine();
+            Console.WriteLine("Insira o nome do autor: ");
+            string autor = Console.ReadLine();
+            Console.WriteLine("Insira o ano de publicação: ");
+            int anoPublicacao = int.Parse(Console.ReadLine());
+
+            Exercicios.Livro livro0 = new(titulo, autor, anoPublicacao);
+
+            livro0.Emprestar();
+            livro0.Emprestar();
+            livro0.Devolver();
+            livro0.Devolver();
+            livro0.Emprestar();
+        }
+    }
+}

@@ -4,8 +4,8 @@ using Repeticao = AcademiaDotNet.Exercicios.Repeticao;
 using Repeticao2 = AcademiaDotNet.Exercicios.Repeticao2;
 using Vetores = AcademiaDotNet.Exercicios.Vetores;
 using Matrizes = AcademiaDotNet.Exercicios.Matrizes;
-// using Funcoes = AcademiaDotNet.Exercicios.Funcoes;
-// using Funcoes2 = AcademiaDotNet.Exercicios.Funcoes2;
+using Funcoes = AcademiaDotNet.Exercicios.Funcoes;
+using Funcoes2 = AcademiaDotNet.Exercicios.Funcoes2;
 
 namespace AcademiaDotNet
 {

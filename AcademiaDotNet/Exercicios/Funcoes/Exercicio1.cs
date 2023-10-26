@@ -1,4 +1,4 @@
-﻿namespace AulaFuncoes
+﻿namespace AcademiaDotNet.Exercicios.Funcoes
 {
     internal class Exercicio1
     {
