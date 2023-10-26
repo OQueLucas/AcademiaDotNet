@@ -30,6 +30,7 @@ namespace OrientacaoObjeto.Exercicios
                 Console.WriteLine("Esse livro já foi emprestado!");
             } else
             {
+                Console.WriteLine("Livro emprestado com sucesso!");
                 emprestado = true;
             }
         }
@@ -38,6 +39,7 @@ namespace OrientacaoObjeto.Exercicios
         {
             if (emprestado)
             {
+                Console.WriteLine("Livro devolvido com sucesso!");
                 emprestado = false;
             }
             else
