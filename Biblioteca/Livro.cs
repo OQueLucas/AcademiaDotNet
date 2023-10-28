@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OrientacaoObjeto.Exercicios
+namespace Biblioteca
 {
     internal class Livro
     {
@@ -10,13 +10,12 @@ namespace OrientacaoObjeto.Exercicios
         // exceto o atributo emprestado que obrigatoriamente deve ser inicializado como false
         // Faça a leitura pelo teclado dos atributos para instanciar dois livros
 
-
         public string titulo;
-        public string autor;
+        public Autor autor;
         public int anoPublicacao;
         public bool emprestado;
 
-        public Livro(string titulo, string autor, int anoPublicacao)
+        public Livro(string titulo, Autor autor, int anoPublicacao)
         {
             this.titulo = titulo;
             this.autor = autor;
@@ -35,6 +34,7 @@ namespace OrientacaoObjeto.Exercicios
                 Console.WriteLine("Livro emprestado com sucesso!");
                 emprestado = true;
             }
+            Console.WriteLine();
         }
 
         public void Devolver()
@@ -48,14 +48,18 @@ namespace OrientacaoObjeto.Exercicios
             {
                 Console.WriteLine("Livro já está no estoque");
             }
+            Console.WriteLine();
         }
 
         public void ExibirInformacoes()
         {
             Console.WriteLine("Titulo: " + this.titulo);
-            Console.WriteLine("Autor: " + this.autor);
+            Console.WriteLine(this.autor.ToString());
+            //Console.WriteLine("Autor: " + this.autor.nome);
+            //Console.WriteLine("Autor: " + this.autor.nacionalidade);
             Console.WriteLine("Ano de publicação: " + this.anoPublicacao);
             Console.WriteLine(emprestado ? "Livro indisponível, já foi emprestado!" : "Livro disponível!");
+            Console.WriteLine();
         }
     }
 }

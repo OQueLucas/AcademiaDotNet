@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademiaDotNet", "AcademiaDotNet\AcademiaDotNet.csproj", "{5642E444-B56A-4A89-890B-9299E404B2AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrientacaoObjeto", "OrientacaoObjeto\OrientacaoObjeto.csproj", "{3F4ACA85-5541-4212-ADF2-D2DA0FD4F048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrientacaoObjeto", "OrientacaoObjeto\OrientacaoObjeto.csproj", "{3F4ACA85-5541-4212-ADF2-D2DA0FD4F048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{41741C1A-3236-4830-8C89-FC4F130E69B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F4ACA85-5541-4212-ADF2-D2DA0FD4F048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4ACA85-5541-4212-ADF2-D2DA0FD4F048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4ACA85-5541-4212-ADF2-D2DA0FD4F048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41741C1A-3236-4830-8C89-FC4F130E69B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41741C1A-3236-4830-8C89-FC4F130E69B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41741C1A-3236-4830-8C89-FC4F130E69B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41741C1A-3236-4830-8C89-FC4F130E69B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
