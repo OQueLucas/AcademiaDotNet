@@ -6,7 +6,7 @@ namespace OrientacaoObjeto
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Console.WriteLine("Oi estamos na classe principal");
             //Pessoa p0 = new Pessoa();
@@ -261,7 +261,7 @@ namespace OrientacaoObjeto
 
             // ---------------------------------------------------------------------------
 
-            Player player = new Player();
+            Player player = new();
 
             player.Musica();
 
