@@ -23,9 +23,9 @@
 
         public static bool EstaContido<T>(string email, List<T> lista) where T : Pessoa
         {
-            foreach (var atleta in lista)
+            foreach (var pessoa in lista)
             {
-                if (email == atleta.Email)
+                if (email == pessoa.Email)
                 {
                     return true;
                 }

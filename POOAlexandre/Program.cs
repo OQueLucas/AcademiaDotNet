@@ -14,6 +14,9 @@
                 Console.WriteLine("1 - Cadastrar atleta");
                 Console.WriteLine("2 - Listar atletas");
                 Console.WriteLine("3 - Remover atleta");
+                Console.WriteLine("4 - Cadastrar treinador");
+                Console.WriteLine("5 - Listar treinadores");
+                Console.WriteLine("6 - Remover treinador");
                 Console.WriteLine("7 - Sair");
                 Console.Write("Opção: ");
                 opcao = Console.ReadLine();
@@ -37,17 +40,17 @@
                         break;
                     case "4":
                         Console.Clear();
-                        Console.WriteLine("Cadastro de atleta");
+                        Console.WriteLine("Cadastro de treinador");
                         Comunicacao.CadastrarTreinador(listaTreinadores);
                         break;
                     case "5":
                         Console.Clear();
-                        Console.WriteLine("Listagem de atletas");
+                        Console.WriteLine("Listagem de treinadores");
                         Comunicacao.ListarTreinadores(listaTreinadores);
                         break;
                     case "6":
                         Console.Clear();
-                        Console.WriteLine("Remoção de atleta");
+                        Console.WriteLine("Remoção de treinador");
                         Comunicacao.RemoverTreinador(listaTreinadores);
                         break;
                     case "7":

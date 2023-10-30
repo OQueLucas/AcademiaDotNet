@@ -2,113 +2,97 @@
 {
     internal class Comunicacao
     {
+        public static Pessoa CadastrarPessoa<T>(List<T> lista) where T : Pessoa
+        {
+            string nome;
+            string email;
+            DateOnly dataNascimento;
+
+            do
+            {
+                Console.Write("Informe um email válido: ");
+                email = Console.ReadLine();
+            } while (!Utilidades.EmailIsValid(email));
+
+            if (Pessoa.EstaContido(email, lista))
+            {
+                Console.WriteLine("Email já utilizado no sistema!!");
+                return null;
+            }
+
+            Console.Write("Nome: ");
+            nome = Console.ReadLine().ToUpper();
+
+            bool dataValida = false;
+            do
+            {
+                try
+                {
+                    Console.Write("Data nascimento [dd/mm/aaaa]: ");
+                    dataValida = DateOnly.TryParse(Console.ReadLine(), out dataNascimento);
+
+                    if (!dataValida)
+                    {
+                        throw new Exception("Data inválida");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (dataValida == false);
+
+            Pessoa pessoa = new(nome, email, dataNascimento);
+
+            return pessoa;
+        }
 
         public static void CadastrarAtleta(List<Atleta> lista)
         {
-            string nome;
-            string email;
-            DateOnly dataNascimento;
             string posicao;
             string categoria;
 
-            do
-            {
-                Console.Write("Informe um email válido: ");
-                email = Console.ReadLine();
-            } while (!Utilidades.EmailIsValid(email));
+            Pessoa pessoa = CadastrarPessoa(lista);
 
-            if (Pessoa.EstaContido(email, lista))
+            if (pessoa == null)
             {
-                Console.WriteLine("Email já utilizado no sistema!!");
+                return;
             }
-            else
-            {
-                Console.Write("Nome: ");
-                nome = Console.ReadLine().ToUpper();
 
-                bool dataValida = false;
-                do
-                {
-                    try
-                    {
-                        Console.Write("Data nascimento [dd/mm/aaaa]: ");
-                        dataValida = DateOnly.TryParse(Console.ReadLine(), out dataNascimento);
+            Console.Write("Posição na quadra [direita ou esquerda]: ");
+            posicao = Console.ReadLine().ToUpper();
 
-                        if (!dataValida)
-                        {
-                            throw new Exception("Data inválida");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                } while (dataValida == false);
+            Console.Write("Categoria [1 ou 2 ou 3 ou 4 ou 5]: ");
+            categoria = Console.ReadLine();
 
-                Console.Write("Posição na quadra [direita ou esquerda]: ");
-                posicao = Console.ReadLine().ToUpper();
+            Atleta atleta = new(pessoa.Nome, pessoa.Email, pessoa.DataNascimento, posicao, categoria);
 
-                Console.Write("Categoria [1 ou 2 ou 3 ou 4 ou 5]: ");
-                categoria = Console.ReadLine();
-
-                Atleta atleta = new(nome, email, dataNascimento, posicao, categoria);
-
-                lista.Add(atleta);
-            }
+            lista.Add(atleta);
         }
+
         public static void CadastrarTreinador(List<Treinador> lista)
         {
-            string nome;
-            string email;
-            DateOnly dataNascimento;
             string registroConselho;
             string clube;
 
-            do
-            {
-                Console.Write("Informe um email válido: ");
-                email = Console.ReadLine();
-            } while (!Utilidades.EmailIsValid(email));
+            Pessoa pessoa = CadastrarPessoa(lista);
 
-            if (Pessoa.EstaContido(email, lista))
+            if (pessoa == null)
             {
-                Console.WriteLine("Email já utilizado no sistema!!");
+                return;
             }
-            else
-            {
-                Console.Write("Nome: ");
-                nome = Console.ReadLine().ToUpper();
 
-                bool dataValida = false;
-                do
-                {
-                    try
-                    {
-                        Console.Write("Data nascimento [dd/mm/aaaa]: ");
-                        dataValida = DateOnly.TryParse(Console.ReadLine(), out dataNascimento);
+            Console.Write("Registro do conselho: ");
+            registroConselho = Console.ReadLine().ToUpper();
 
-                        if (!dataValida)
-                        {
-                            throw new Exception("Data inválida");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                } while (dataValida == false);
+            Console.Write("Clube: ");
+            clube = Console.ReadLine();
 
-                Console.Write("Registro do conselho: ");
-                registroConselho = Console.ReadLine().ToUpper();
+            Treinador treinador = new(pessoa.Nome, pessoa.Email, pessoa.DataNascimento, registroConselho, clube);
 
-                Console.Write("Clube: ");
-                clube = Console.ReadLine();
-
-                Treinador treinador = new(nome, email, dataNascimento, registroConselho, clube);
-
-                lista.Add(treinador);
-            }
+            lista.Add(treinador);
         }
+
 
         public static void ListarAtletas(List<Atleta> lista)
         {
