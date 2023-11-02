@@ -1,6 +1,9 @@
 ﻿using OrientacaoObjeto.Desafios.Mercado;
 using OrientacaoObjeto.Desafios.Player;
+using OrientacaoObjeto.Desafios.Exercicio10;
+using OrientacaoObjeto.Desafios;
 using OrientacaoObjeto.Exercicios;
+using OrientacaoObjeto.Exercicio12;
 
 namespace OrientacaoObjeto
 {
@@ -247,7 +250,6 @@ namespace OrientacaoObjeto
 
             // ---------------------------------------------------------------------------
 
-
             //Produtos produtos = new();
 
             //produtos.AdicionarProduto(312, "batata", 2.14, 200);
@@ -261,10 +263,20 @@ namespace OrientacaoObjeto
 
             // ---------------------------------------------------------------------------
 
-            Player player = new();
+            //Player player = new();
 
-            player.Musica();
+            //player.Musica();
 
+            // ---------------------------------------------------------------------------
+
+            //Animal gato = new("Jake", "Gato", 4);
+            //gato.EmitirSom();
+
+            // ---------------------------------------------------------------------------
+
+            Agenda agenda = new();
+
+            agenda.AgendaApp();
         }
     }
 }
