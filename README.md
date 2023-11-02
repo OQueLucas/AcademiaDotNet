@@ -57,45 +57,45 @@ Repositório para armazenar os exercícios e atividades realizadas durante a aca
 # Front-end
 
 ## HTML
-- [x]Conceito de HTML
-- [x]Evolução do HTML
-- [x]Arquitetura
-- [x]Estrutura do HTML
-- [x]Elementos de marcação
-- [x]Inspeção de código
-- [x]Hiperlinks
-- [ ]Metadados
-- [ ]Atributos globais
-- [ ]Formulários e inputs
+- [x] Conceito de HTML
+- [x] Evolução do HTML
+- [x] Arquitetura
+- [x] Estrutura do HTML
+- [x] Elementos de marcação
+- [x] Inspeção de código
+- [x] Hiperlinks
+- [ ] Metadados
+- [ ] Atributos globais
+- [ ] Formulários e inputs
 
 ## CSS
-- [x]Conceito de CSS
-- [x]Evolução do CSS
-- [x]Estilo e posicionamento de elementos
-- [x]Seletores
-- [x]Hierarquias
-- [x]CSS *inline*
-- [x]CSS externo
-- [ ]Reset de CSS
-- [ ]Pseudo-classes e pseudo-elementos
-- [ ]Transformações e transições
-- [ ]Viewports
-- [ ]Frameworks
+- [x] Conceito de CSS
+- [x] Evolução do CSS
+- [x] Estilo e posicionamento de elementos
+- [x] Seletores
+- [x] Hierarquias
+- [x] CSS *inline*
+- [x] CSS externo
+- [ ] Reset de CSS
+- [ ] Pseudo-classes e pseudo-elementos
+- [ ] Transformações e transições
+- [ ] Viewports
+- [ ] Frameworks
 
 ## Javascript
-- [x]Conceito de Javascript
-- [x]Variáveis
-- [x]Condicionais
-- [x]Laços de repetição
-- [x]Funções/Métodos
-- [x]DOM
-- [x]Seletores
-- [ ]Eventos
-- [ ]Biblioteca jQuery
-- [ ]Frameworks
+- [x] Conceito de Javascript
+- [x] Variáveis
+- [x] Condicionais
+- [x] Laços de repetição
+- [x] Funções/Métodos
+- [x] DOM
+- [x] Seletores
+- [ ] Eventos
+- [ ] Biblioteca jQuery
+- [ ] Frameworks
 
 ## Ambiente de desenvolvimento *vs* produção
-- [ ]Conceito cliente-servidor
-- [ ]Hospedagem
-- [ ]Compatibilidade
-- [ ]Protocolos e DNS
+- [ ] Conceito cliente-servidor
+- [ ] Hospedagem
+- [ ] Compatibilidade
+- [ ] Protocolos e DNS
