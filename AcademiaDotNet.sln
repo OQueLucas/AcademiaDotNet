@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Introducao", "AcademiaDotNet\Introducao.csproj", "{5642E444-B56A-4A89-890B-9299E404B2AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Introducao", "Introducao\Introducao.csproj", "{5642E444-B56A-4A89-890B-9299E404B2AA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrientacaoObjeto", "OrientacaoObjeto\OrientacaoObjeto.csproj", "{3F4ACA85-5541-4212-ADF2-D2DA0FD4F048}"
 EndProject
