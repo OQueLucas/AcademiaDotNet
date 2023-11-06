@@ -1,8 +1,4 @@
-﻿using OrientacaoObjeto.Desafios.Mercado;
-using OrientacaoObjeto.Desafios.Player;
-using OrientacaoObjeto.Desafios.Exercicio10;
-using OrientacaoObjeto.Desafios;
-using OrientacaoObjeto.Exercicios;
+﻿using OrientacaoObjeto.Exercicios;
 using OrientacaoObjeto.Exercicio12;
 
 namespace OrientacaoObjeto

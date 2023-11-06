@@ -8,39 +8,9 @@
         private string _especie;
         private int _idade;
 
-        public string Nome
-        {
-            get
-            {
-                return _nome;
-            }
-            set
-            {
-                _nome = value;
-            }
-        }
-        public string Especie
-        {
-            get
-            {
-                return _especie;
-            }
-            set
-            {
-                _especie = value;
-            }
-        }
-        public int Idade
-        {
-            get
-            {
-                return _idade;
-            }
-            set
-            {
-                _idade = value;
-            }
-        }
+        public string Nome { get { return _nome; } set { _nome = value; } }
+        public string Especie { get { return _especie; } set { _especie = value; } }
+        public int Idade { get { return _idade; } set { _idade = value; } }
 
         public Animal(string nome, string especia, int idade)
         {
