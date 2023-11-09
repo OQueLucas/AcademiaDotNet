@@ -59,14 +59,17 @@ namespace POOAmigoSecreto
 
                 for (int i = 0; i < amigos.Count; i++)
                 {
-                    streamWriter.WriteLine(amigos[i] + " : " + amigoOculto[i]);
+                    string amigoSecreto = amigos[i] + ";" + amigoOculto[i];
+                    Console.WriteLine(amigoSecreto);
+                    streamWriter.WriteLine(amigoSecreto);
                 }
+
                 streamWriter.Close();
 
             }
-            catch
+            catch (Exception e) 
             {
-                Console.WriteLine("Não foi possível abrir o arquivo.");
+                Console.WriteLine(e.Message);
             }
         }
     }
