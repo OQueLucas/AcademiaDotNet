@@ -37,7 +37,6 @@ namespace POOAmigoSecreto
                         Console.Clear();
                         Console.WriteLine("Gerar amigo secreto");
                         Persistencia.GerarAmigos(pessoas);
-
                         break;
                     case "4":
                         Environment.Exit(0);

@@ -28,13 +28,11 @@ namespace POOAmigoSecreto
             }
         }
 
-        public static void CSVWriter(Pessoa pessoa)
+        public static void CSVWriter(string path, Pessoa pessoa)
         {
-            string path = @"..\..\..\Data\amigos.csv";
-
             StreamWriter streamWriter = File.Exists(path) ? File.AppendText(path) : File.CreateText(path);
 
-            streamWriter.WriteLine(pessoa.Nome + ";" + pessoa.Email);
+            streamWriter.WriteLine(pessoa);
 
             streamWriter.Close();
         }
@@ -47,27 +45,37 @@ namespace POOAmigoSecreto
 
                 Random rng = new();
 
-                List<Pessoa> amigos = pessoas.OrderBy(a => rng.Next()).ToList();
+                List<Pessoa> listPessoas = pessoas.OrderBy(a => rng.Next()).ToList();
 
-                List<Pessoa> amigoOculto = amigos.ToList();
+                List<Pessoa> listAmigos = listPessoas.ToList();
 
-                amigoOculto.Reverse();
+                List<AmigoSecreto> listAmigosSecretos = new();
 
                 string path = @"..\..\..\Data\secretos.csv";
 
-                StreamWriter streamWriter = File.CreateText(path);
-
-                for (int i = 0; i < amigos.Count; i++)
+                foreach (Pessoa pessoa in listPessoas)
                 {
-                    string amigoSecreto = amigos[i] + ";" + amigoOculto[i];
-                    Console.WriteLine(amigoSecreto);
+                    int random = rng.Next(0, listAmigos.Count);
+                    Pessoa amigo = listAmigos.ElementAt(random);
+
+                    if (pessoa != amigo)
+                    {
+                        listAmigosSecretos.Add(new(pessoa, amigo));
+                        listAmigos.Remove(amigo);
+                    }
+                    else
+                    {
+                        throw new Exception($"Gere novamente, alguém tirou a si mesmo");
+                    }
+                }
+                StreamWriter streamWriter = File.CreateText(path);
+                foreach (AmigoSecreto amigoSecreto in listAmigosSecretos)
+                {
                     streamWriter.WriteLine(amigoSecreto);
                 }
-
                 streamWriter.Close();
-
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }

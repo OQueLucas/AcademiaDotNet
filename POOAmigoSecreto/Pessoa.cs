@@ -18,7 +18,7 @@
 
         public override string ToString()
         {
-            return Nome + " " + Email;
+            return Nome + ";" + Email;
         }
 
         public override bool Equals(object? obj)

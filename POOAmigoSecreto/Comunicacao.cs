@@ -39,7 +39,7 @@
                 {
                     pessoas.Add(new Pessoa(name, email));
                     pessoas.Sort((a, b) => a.Nome.CompareTo(b.Nome));
-                    Persistencia.CSVWriter(pessoa);
+                    Persistencia.CSVWriter(@"..\..\..\Data\amigos.csv", pessoa);
                 }
 
                 Console.WriteLine("Tecle S se deseja sair: ");
