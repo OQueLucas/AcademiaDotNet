@@ -43,6 +43,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstracaoExercicio11", "Abs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POO", "POO", "{B73B8536-C53A-41BE-8114-741B37AE91A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormAmigoSecreto", "WindowsFormAmigoSecreto\WindowsFormAmigoSecreto.csproj", "{A24C272C-D6D7-4DD2-B4D2-060E1154925A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,10 @@ Global
 		{4FD6A9E9-6AD0-4634-A479-1134AA97D65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD6A9E9-6AD0-4634-A479-1134AA97D65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD6A9E9-6AD0-4634-A479-1134AA97D65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24C272C-D6D7-4DD2-B4D2-060E1154925A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24C272C-D6D7-4DD2-B4D2-060E1154925A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24C272C-D6D7-4DD2-B4D2-060E1154925A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24C272C-D6D7-4DD2-B4D2-060E1154925A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
