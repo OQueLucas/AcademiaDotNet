@@ -39,7 +39,7 @@
                 {
                     pessoas.Add(new Pessoa(name, email));
                     pessoas.Sort((a, b) => a.Nome.CompareTo(b.Nome));
-                    Persistencia.CSVWriter(@"..\..\..\Data\amigos.csv", pessoa);
+                    Persistencia.CSVWriter(pessoa);
                 }
 
                 Console.WriteLine("Tecle S se deseja sair: ");
@@ -55,6 +55,46 @@
             foreach (Pessoa p in pessoas)
             {
                 Console.WriteLine(p);
+            }
+        }
+
+        public static void GerarAmigoSecreto(List<Pessoa> pessoas)
+        {
+            try
+            {
+                Persistencia.CSVReader(pessoas);
+
+                Random rng = new();
+
+                List<Pessoa> listPessoas = pessoas.OrderBy(a => rng.Next()).ToList();
+
+                List<Pessoa> listAmigos = listPessoas.ToList();
+
+                List<AmigoSecreto> listAmigosSecretos = new();
+
+                foreach (Pessoa pessoa in listPessoas)
+                {
+                    int random = rng.Next(0, listAmigos.Count);
+                    Pessoa amigo = listAmigos.ElementAt(random);
+
+                    if (pessoa != amigo)
+                    {
+                        listAmigosSecretos.Add(new(pessoa, amigo));
+                        listAmigos.Remove(amigo);
+                    }
+                    else
+                    {
+                        throw new Exception("Gere novamente, alguém tirou a si mesmo");
+                    }
+                }
+
+                Persistencia.CSVWriter(listAmigosSecretos);
+
+                Console.WriteLine("Lista gerada com sucesso!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }

@@ -7,7 +7,7 @@
 - [x] Listar amigos
 - [x] Gerar amigo secreto
 
-##Para o desafio usar ou criar:
+## Para o desafio usar ou criar:
 - [x] classe Amigo: nome e email (getter e setter); método construtor;
 - [x] lista de amigos
 - [x] arquivo amigos.csv (com dados dos amigos, linha a linha, com os dados separados por ;)

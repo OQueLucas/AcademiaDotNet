@@ -4,13 +4,15 @@ namespace POOAmigoSecreto
 {
     internal class Persistencia
     {
+        static readonly string pathPessoas = @"..\..\..\Data\pessoas.csv";
+        static readonly string pathAmigoSecreto = @"..\..\..\Data\amigoSecreto.csv";
+
         public static void CSVReader(List<Pessoa> pessoas)
         {
             try
             {
-                string path = @"..\..\..\Data\amigos.csv";
 
-                StreamReader streamReader = new(path, Encoding.UTF8);
+                StreamReader streamReader = new(pathPessoas, Encoding.UTF8);
 
                 while (!streamReader.EndOfStream)
                 {
@@ -28,47 +30,27 @@ namespace POOAmigoSecreto
             }
         }
 
-        public static void CSVWriter(string path, Pessoa pessoa)
-        {
-            StreamWriter streamWriter = File.Exists(path) ? File.AppendText(path) : File.CreateText(path);
-
-            streamWriter.WriteLine(pessoa);
-
-            streamWriter.Close();
-        }
-
-        public static void GerarAmigos(List<Pessoa> pessoas)
+        public static void CSVWriter(Pessoa pessoa)
         {
             try
             {
-                CSVReader(pessoas);
+                StreamWriter streamWriter = File.Exists(pathPessoas) ? File.AppendText(pathPessoas) : File.CreateText(pathPessoas);
 
-                Random rng = new();
+                streamWriter.WriteLine(pessoa);
 
-                List<Pessoa> listPessoas = pessoas.OrderBy(a => rng.Next()).ToList();
+                streamWriter.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
 
-                List<Pessoa> listAmigos = listPessoas.ToList();
-
-                List<AmigoSecreto> listAmigosSecretos = new();
-
-                string path = @"..\..\..\Data\secretos.csv";
-
-                foreach (Pessoa pessoa in listPessoas)
-                {
-                    int random = rng.Next(0, listAmigos.Count);
-                    Pessoa amigo = listAmigos.ElementAt(random);
-
-                    if (pessoa != amigo)
-                    {
-                        listAmigosSecretos.Add(new(pessoa, amigo));
-                        listAmigos.Remove(amigo);
-                    }
-                    else
-                    {
-                        throw new Exception($"Gere novamente, alguém tirou a si mesmo");
-                    }
-                }
-                StreamWriter streamWriter = File.CreateText(path);
+        public static void CSVWriter(List<AmigoSecreto> listAmigosSecretos)
+        {
+            try
+            {
+                StreamWriter streamWriter = File.CreateText(pathAmigoSecreto);
                 foreach (AmigoSecreto amigoSecreto in listAmigosSecretos)
                 {
                     streamWriter.WriteLine(amigoSecreto);

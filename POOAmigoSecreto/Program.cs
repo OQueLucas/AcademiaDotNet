@@ -1,7 +1,4 @@
-﻿using System.Reflection;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace POOAmigoSecreto
+﻿namespace POOAmigoSecreto
 {
     internal class Program
     {
@@ -36,7 +33,7 @@ namespace POOAmigoSecreto
                     case "3":
                         Console.Clear();
                         Console.WriteLine("Gerar amigo secreto");
-                        Persistencia.GerarAmigos(pessoas);
+                        Comunicacao.GerarAmigoSecreto(pessoas);
                         break;
                     case "4":
                         Environment.Exit(0);
