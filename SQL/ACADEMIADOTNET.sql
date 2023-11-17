@@ -63,11 +63,6 @@ CREATE TABLE matriculas
 
 
 
-
-
-
-
-
 SP_HELPDB ACADEMIADOTNET;
 
 EXEC sp_help matriculas;
