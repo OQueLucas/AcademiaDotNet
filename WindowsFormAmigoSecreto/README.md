@@ -1,4 +1,7 @@
-﻿# Amigo Secreto ![C#](https://img.shields.io/badge/c%23-%23239120.svg?logo=c-sharp&logoColor=white) ![Static Badge](https://img.shields.io/badge/6.0-blueviolet?logo=.net&logoColor=white) 
+# PROJETO ANTIGO ([ACESSE O NOVO AQUI](https://github.com/OQueLucas/Academia_DotNet_5-WPAmigoSecreto))
+Por questão de organização, separei o projeto e fiz modificações nesse novo link, caso queira ver a versão mais atualizada do mesmo, acesso o link acima.
+ 
+ # Amigo Secreto ![C#](https://img.shields.io/badge/c%23-%23239120.svg?logo=c-sharp&logoColor=white) ![Static Badge](https://img.shields.io/badge/6.0-blueviolet?logo=.net&logoColor=white) 
 
 Aplicação desenvolvida em `C# Windows Form` com o intuito de gerar pares pros amigos secreto.
 
