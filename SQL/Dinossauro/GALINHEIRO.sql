@@ -116,3 +116,14 @@ INSERT INTO dinossauro (nome, fk_grupo, peso, anoDescoberta, fk_descobridor, fk_
 VALUES ('Anquilossauros', 1, 8, 1906, 6, 1, 66, 63, 5);
 
 SELECT * FROM dinossauro;
+
+DELETE FROM dinossauro;
+
+-- Insert errado
+INSERT INTO dinossauro (nome, fk_grupo, peso, anoDescoberta, fk_descobridor, fk_era, inicio, fim, fk_paisOrigem)
+VALUES ('Tricerátops', 2, 6, 1887, 2, 1, 200, 45, 2);
+
+
+UPDATE dinossauro 
+SET inicio = 200, fim = 45
+WHERE nome = 'Saichania';
