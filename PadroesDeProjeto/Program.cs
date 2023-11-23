@@ -1,5 +1,7 @@
 ﻿using PadroesDeProjeto;
+using PadroesDeProjeto.Fachada;
 using PadroesDeProjeto.FactoryMethod;
+using PadroesDeProjeto.PPProxy;
 
 namespace PadroesDeProjeto
 {
@@ -7,36 +9,69 @@ namespace PadroesDeProjeto
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Testando o padrão de projeto Factory Method");
-            // eu quero a adiar a decisão de qual classe instanciar
-            //Cachorro c = new Cachorro();
-            //c.FazerSom();
-            // agora, podemos adiar  a decisao de qual objetovamos instanciar uma
+            Console.WriteLine("Testando a classe Facade");
+            Facade fachada = new("root", "1234");
+            fachada.InicializarSistema();
 
-            IAnimalFactory cFactory = new CachorroFactory();
-            Cliente cli1 = new(cFactory);
-            cli1.InteragirComAnimal();
-
-
-            IAnimalFactory gFactory = new GatoFactory();
-            Cliente cli2 = new(gFactory);
-            cli2.InteragirComAnimal();
-
-            List<Cliente> listaClientes = new()
-            {
-                cli1,
-                cli2,
-                new(cFactory), // to adicionando outro cachorro
-                new(gFactory)
-            };
-
-            foreach(var animal in listaClientes)
-            {
-                animal.InteragirComAnimal();
-            }
+            /*A utilização do facade evita com que seja necessário sempre alterar 
+            no cliente novos componentes.
+            tudo ficará centraliado na classe Facade
+            SistemaBancoDeDados sbd = new SistemaBancoDeDados();
+            SistemaServidorWeb ssw = new SistemaServidorWeb();
+            SistemaAutenticacao sa = new SistemaAutenticacao("root", "1234");
+            sbd.IniciarBancoDeDados();
+            ssw.IniciarServidor();
+            sa.IniciarSistema();*/
         }
     }
 }
+
+//Console.WriteLine("Testando a classe Facade");
+//Facade fachada = new("root", "1234");
+//fachada.InicializarSistema();
+
+///*A utilização do facade evita com que seja necessário sempre alterar 
+//no cliente novos componentes.
+//tudo ficará centraliado na classe Facade
+//SistemaBancoDeDados sbd = new SistemaBancoDeDados();
+//SistemaServidorWeb ssw = new SistemaServidorWeb();
+//SistemaAutenticacao sa = new SistemaAutenticacao("root", "1234");
+//sbd.IniciarBancoDeDados();
+//ssw.IniciarServidor();
+//sa.IniciarSistema();*/
+
+// ---------------------------------------------------------------------------------------
+
+//Console.WriteLine("Testando o padrão de projeto Factory Method");
+
+//// eu quero a adiar a decisão de qual classe instanciar
+////Cachorro c = new Cachorro();
+////c.FazerSom();
+//// agora, podemos adiar  a decisao de qual objetovamos instanciar uma
+
+//IAnimalFactory cFactory = new CachorroFactory();
+//Cliente cli1 = new(cFactory);
+//cli1.InteragirComAnimal();
+
+
+//IAnimalFactory gFactory = new GatoFactory();
+//Cliente cli2 = new(gFactory);
+//cli2.InteragirComAnimal();
+
+//List<Cliente> listaClientes = new()
+//            {
+//                cli1,
+//                cli2,
+//                new(cFactory), // to adicionando outro cachorro
+//                new(gFactory)
+//            };
+
+//foreach (var animal in listaClientes)
+//{
+//    animal.InteragirComAnimal();
+//}
+
+// ---------------------------------------------------------------------------------------
 
 //Console.WriteLine("Testando a classe configuração usando o padrão singleton");
 
