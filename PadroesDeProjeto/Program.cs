@@ -9,19 +9,13 @@ namespace PadroesDeProjeto
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Testando a classe Facade");
-            Facade fachada = new("root", "1234");
-            fachada.InicializarSistema();
+            IServico proxy = new Proxy();
+            proxy.Solicitar();
 
-            /*A utilização do facade evita com que seja necessário sempre alterar 
-            no cliente novos componentes.
-            tudo ficará centraliado na classe Facade
-            SistemaBancoDeDados sbd = new SistemaBancoDeDados();
-            SistemaServidorWeb ssw = new SistemaServidorWeb();
-            SistemaAutenticacao sa = new SistemaAutenticacao("root", "1234");
-            sbd.IniciarBancoDeDados();
-            ssw.IniciarServidor();
-            sa.IniciarSistema();*/
+            Console.WriteLine();
+
+            IServico proxy2 = new Proxy();
+            proxy2.Solicitar();
         }
     }
 }
