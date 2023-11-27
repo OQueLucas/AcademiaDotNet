@@ -45,7 +45,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POO", "POO", "{B73B8536-C53
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsFormAmigoSecreto", "WindowsFormAmigoSecreto\WindowsFormAmigoSecreto.csproj", "{A24C272C-D6D7-4DD2-B4D2-060E1154925A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PadroesDeProjeto", "PadroesDeProjeto\PadroesDeProjeto.csproj", "{07B14FB6-5443-4247-8755-6C0C479A454A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PadroesDeProjeto", "PadroesDeProjeto\PadroesDeProjeto.csproj", "{07B14FB6-5443-4247-8755-6C0C479A454A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
