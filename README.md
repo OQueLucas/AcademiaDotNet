@@ -12,15 +12,16 @@ Repositório com lista de exercícios e desafios da Academia DotNet da UFN.
 - ``C#``
 
 ## Sobre repositório
+
 Repositório para armazenar os exercícios e atividades realizadas durante a academia DotNet.
 
-## Professores: 
+## Professores
 
-- Alexandre Zamberlan - https://github.com/alexandrezamberlan
-- Fabrício Londero - https://github.com/Ernakh (Coordenador Academia Java e Dot Net)
-- Ricardo Frohlich da Silva - https://github.com/ricardosma (Coordenador Turma Dot Net)
+- Alexandre Zamberlan - <https://github.com/alexandrezamberlan>
+- Fabrício Londero - <https://github.com/Ernakh> (Coordenador Academia Java e Dot Net)
+- Ricardo Frohlich da Silva - <https://github.com/ricardosma> (Coordenador Turma Dot Net)
 
-# Backend C#
+## Backend C
 
 - [x] Console (escrita e leitura)
 - [x] Instruções de controle
@@ -28,35 +29,36 @@ Repositório para armazenar os exercícios e atividades realizadas durante a aca
 - [ ] Windows Forms
 - [ ] RestAPI
 
-## Orientação a objetos
+### Orientação a objetos
 
 - [x] Classes: objetos, métodos, atributos
-- [ ] Relacionamentos: associação e herança
+- [X] Relacionamentos: associação e herança
 - [x] Encapsulamento e Polimorfismo
-- [ ] Interface
+- [x] Interface
 - [ ] Manipulação de arquivos (JSON e Classe Stream)
-- [ ] Criptografia
+- [x] Criptografia
 - [ ] Serialização
 
-## Banco de dados
+### Banco de dados
 
-- [ ] Modelagem: atributos, chaves primárias e estrangeiras; relacionamentos; cardinalidades
-- [ ] SQL: DML e DDL
-- [ ] ADO .Net: connection, datar eader, data set, data adapter
-- [ ] SQL Server
-- [ ] Triggers e Procedures
-- [ ] Transactions
+- [x] Modelagem: atributos, chaves primárias e estrangeiras; relacionamentos; cardinalidades
+- [x] SQL: DML e DDL
+- [x] ADO .Net: connection, datar reader, data set, data adapter
+- [x] SQL Server
+- [x] Triggers e Procedures
+- [x] Transactions
 - [ ] LINQ
 
-## Frameworks
+### Frameworks
 
 - [ ] ASP .Net MVC
-- [ ] Entity
+- [x] Entity
 - [ ] API Rest
 
-# Front-end
+## Front-end
 
-## HTML
+### HTML
+
 - [x] Conceito de HTML
 - [x] Evolução do HTML
 - [x] Arquitetura
@@ -66,9 +68,10 @@ Repositório para armazenar os exercícios e atividades realizadas durante a aca
 - [x] Hiperlinks
 - [ ] Metadados
 - [ ] Atributos globais
-- [ ] Formulários e inputs
+- [x] Formulários e inputs
 
-## CSS
+### CSS
+
 - [x] Conceito de CSS
 - [x] Evolução do CSS
 - [x] Estilo e posicionamento de elementos
@@ -79,10 +82,11 @@ Repositório para armazenar os exercícios e atividades realizadas durante a aca
 - [ ] Reset de CSS
 - [ ] Pseudo-classes e pseudo-elementos
 - [ ] Transformações e transições
-- [ ] Viewports
+- [ ] Viewport
 - [ ] Frameworks
 
-## Javascript
+### Javascript
+
 - [x] Conceito de Javascript
 - [x] Variáveis
 - [x] Condicionais
@@ -90,11 +94,12 @@ Repositório para armazenar os exercícios e atividades realizadas durante a aca
 - [x] Funções/Métodos
 - [x] DOM
 - [x] Seletores
-- [ ] Eventos
-- [ ] Biblioteca jQuery
+- [x] Eventos
+- [x] Biblioteca jQuery
 - [ ] Frameworks
 
-## Ambiente de desenvolvimento *vs* produção
+### Ambiente de desenvolvimento *vs* produção
+
 - [ ] Conceito cliente-servidor
 - [ ] Hospedagem
 - [ ] Compatibilidade
